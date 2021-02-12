@@ -1,10 +1,10 @@
-# Introduction
+# Pagpapakilala
 
-PetaBencana.id is a project initiated by the Urban Risk Lab at MIT as a free, transparent platform for emergency response and disaster management in megacities in South and Southeast Asia.
+Ang MapaKalamidad ay pinapatakbo ng [Yayasan Peta Bencana](https://info.petabencana.id/), bilang isang libre at transparent na plataporma para sa agarang tugon at pamamahala ng kalamidad sa mga megacities sa Timog at Timog-silangang Asya.
 
-The platform adopts a “people as sensors” paradigm, where confirmed reports are collected directly from the users at street level in a manner that removes expensive and time-consuming data processing. This framework creates accurate, real-time data which is immediately made available for users and first responders.
+Ang plataporma ay isinasatupad ang kasabihang "people are the best sensors" kung saan ang pinagtibay na ulat ay kinokolekta direkta mula sa mga gumagamit sa daan upang iwasan ang mga hindi mabisang pamamaraan ng pagkolekta at pag proseso ng datos. Ang framework na ito ay lumilikha ng tumpak at real-time na datos na ginawa para sa mga gumagamit, lalo na sa mga first responders.
 
-PetaBencana.id gathers, sorts, and visualizes data using specially developed CogniCity Open Source Software - an enterprise-level platform for emergency response and disaster management - to transforms the noise of social and digital media into critical information for residents, communities, and government agencies
+Ang MapaKalamidad.ph ay nagtitipon, nag-aayos, at nagpapakita ng datos gamit ang CogniCity Open Source Software na isang plataporma para sa agarang tugon at pamamahala ng kalamidad na ginagamit ang ingay ng social at digital na media sa kritikal na impormasyon para sa mga residente, mga komunidad, at mga ahensya ng gobyerno.
 
 ## Petabencana Data API
 
