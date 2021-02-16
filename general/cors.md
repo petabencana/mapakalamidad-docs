@@ -1,4 +1,4 @@
 # CORS
 
-[Cross-Origin Requests](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) are supported with no domain restrictions to allow for ease of integration into browser based applications.
+[Cross-Origin Requests](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) ay sinusuporta na walang paghihigpit sa domain upang mapadali ang pagsasama sa mga browser based applications.
 

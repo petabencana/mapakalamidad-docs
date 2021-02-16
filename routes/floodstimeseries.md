@@ -1,29 +1,29 @@
-# Floods/Timeseries
+# Baha/Timeseries
 
-Time series of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Serye ng oras ng mga lugar na binabaha \(tingnan ang dokumentasyon ng [Floods endpoint](floods.md)\), na itinanghal bilang bilang ng mga lugar na apektado ng baha bawat oras sa loob ng tinukoy na panahon. Ang bilang ay naitala kasama ang isang oras-oras na timestamp sa format na ISO8601 sa UTC + 0.
 
-Currently this data is only available for Jakarta.
+Sa kasuluuyan ang datos na ito ay magagamit lamang para sa Quezon City at Pampanga.
 
-## Request Format
+## Format ng Kahilingan
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| start | Start time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| start | Oras ng pagsisimula para sa panahon ng serye ng oras. | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| end | Oras ng pagtatapos para sa panahon ng serye ng oras | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Tandaan na ang time zone ay dapat na tinukoy bilang +/- Ang offset ng UTC na mangangailangan ng pag-encode ng character na HTML \(hal. +0700 nagiging% 2B0700\).
 
-## Get /floods/timeseries
+## Kumuha /floods/timeseries
 
-## GET /floods
+## KUMUHA /floods
 
-List all flooded areas in Jakarta with a flood state of 1 or higher.
+Ilista ang lahat ng mga lugar na binabaha sa Quezon City at Pampanga na may flood gauge ng 1 o mas mataas
 
 ```text
 curl "https://data.petabencana.id/floods/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusnod:
 
 ```javascript
     {

@@ -1,24 +1,24 @@
 # Flood Gauges
 
-Live flood gauge reports, by default reports will be returned for the last hour.
+Ang mga live flood gauge reports, kadalasan, ay ibabalik sa huling oras.
 
-## Request Format
+## Format ng Kahilingan
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| format | Aling format ang dapat nating ibalik? \(isa sa`json`, defaults to `json`\) | String | No |
+| geoformat | Aling format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
-## GET /floodgauges
+## KUMUHA /floodgauges
 
-List all current flood gauge reports for Jakarta.
+Ilista ang lahat ng kasalukuyang ulat sa gauge ng baha para sa Quezon CIty and Pampanga.
 
 ```text
 curl "https://data.petabencana.id/floodgauges?city=jbd"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {

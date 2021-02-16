@@ -1,6 +1,7 @@
 # Rate Limits
 
-The Petabencana API employs rate limiting that cap the number of requests that can be made against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive `HTTP 429 Too Many Requests responses from the API.`
+Gumagamit ang MapaKalamidad API ng rate limiting na nagbibigay hangganan sa bilang ng mga hiling na maigagamit kontra sa endpoint. Kapag lumagpas ka sa hangganan, ang inyong hiling ay mapipigilan at makatatangap ka ng HTTP 429 Masyadong Maraming Humihiling ng mga tugon mula sa API.
 
-You are encouraged to always stay within your allocated quota and implement retries in your code where applicable.
+Hinihikayat kang laging manatili sa loob ng iyong inilaan na quota at magpatupad ng mga pagsubok sa iyong code kung saan na aangkop.  
+
 

@@ -1,6 +1,6 @@
-# Authentication
+# Pagpapatunay
 
-The Petabencana API exposes some protected routes which will require authentication to access. Authentication is via a [JSON Web Token](https://jwt.io/introduction/)
-
-Note: For a new API key, please reach out to PetaBencana team
+Ang MapaKalamidad API ay naglalantad ng ilang mga protektadong ruta na mangangngailangan ng pagpapatunay upang ma-access.Ginagamit ang JSON Web Token para sa pagpapatunay.  
+  
+Tanda: Para sa bagong API key, mangyaring makipagugnayan sa MapaKalamidad team.
 

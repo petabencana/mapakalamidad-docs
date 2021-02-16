@@ -1,23 +1,23 @@
 # Cities
 
-PetaBencana supports multiple cities defined by a geographic area. This endpoint will return the supported cities together with their geographic bounds.
+Sinusuportahan ng MapaKalamidad ang maraming mga lungsod na tinutukoy ng isang pangheograpiyang lugar. Ibabalik ng endpoint na ito ang mga sinusuportahang lungsod kasama ang kani-kanilang mga hangganang pangheograpiya.
 
 ## Request Format
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| format | Aling format ang dapat nating ibalik ang mga resulta? \(isang `json`, babalik sa`json`\) | String | No |
+| geoformat | Anong format ang dapat gamitin  ng geographic results o ang resulta sa heyograpiya \(isang `topojson`, `geojson` babalik sa `topojson`\) | String | No |
 
-## GET /cities
+## KUMUHA/cities
 
-Return all cities in default \(topojson\) format.
+Ibalik ang lahat ng mga lungsod sa format na default \(topojson\).
 
 ```text
 curl "https://data.petabencana.id/cities"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {
@@ -155,13 +155,13 @@ Results are as follows:
 }
 ```
 
-Return all cities in default \(geojson\) format.
+Ibalik ang lahat ng mga lungsod sa format na default \(geojson\).
 
 ```text
 curl "https://data.petabencana.id/cities?geoformat=geojson"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {

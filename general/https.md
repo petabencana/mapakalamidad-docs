@@ -1,4 +1,4 @@
 # HTTPS
 
-Access to all APIs over HTTPS is mandatory. Requests initiated over HTTP are automatically upgraded to HTTPS.
+Ang pag-access sa lahat ng mga API sa HTTPS ay sapilitan. Ang mga kahilingan na sinimulan sa HTTP ay agad iaangat sa HTTPS.
 

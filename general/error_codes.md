@@ -1,22 +1,24 @@
 # Error Codes
 
-Petabencana uses the standard [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to communicate errors together with a json formatted error message giving more information as to the root cause of the error. The main codes used are as follows:
+Sumusunod ang MapaKalamidad sa pamantayan ng HTTP Status Codes upang maghatid ng mga pagkakamali kasama ang isang mensahe na json formmatted na nagbibigay impormasyon ukol sa ugat ng pagkakamali. Ang mga pangunahing ginamit na codes ay ang sumusunod:
 
 ## 4xx Errors
 
-Errors starting with a 4 generally indicate a client side issue that must be resolved before re-querying the service such as:
+Ipinapahiwatig ng mga pagkakamaling nagsisimula sa 4 ang mga isyu sa panig ng kliyente na dapat ma resolba bago muling magtanong ng serbisyo tulad ng:
 
-* **400 Bad Request** - normally caused by an incorrect query parameter e.g. `"child \"type\" fails because [\"type\" must be one of [floodgates, pumps, waterways]]"`
-* **403 Forbidden** - the authentication token is invalid
-* **404 Not Found** - the resource was not found, this may indicate an incorrect endpoint or trying to retrieve a record for example, a report, which does not exist
-* **409 Conflict** - the resource exists but if the request was allowed a conflict would be created in the system, for example, filing a report for a card where a report already exists
-* **415 Unsupported Media Type** - the file being uploaded is not supported by the system - this usually means a binary file such as an image is being uploaded but the Content-Type header with the associated MIME type \(e.g. \`image/jpeg\`\) has not been supplied
-* **429 Too Many Requests** - you have exceeded your per second or per day quota of requests
+* **400 Bad Request** - madalas sanhi ito ng isang maling query parameter tulad ng:`"child \"type\" fails because [\"type\" must be one of [floodgates, pumps, waterways]]"`
+* **403 Forbidden** -  ****ang tanda ng pagpapatunay ay imbalido
+* **404 Not Found** - hindi mahanap ang pinagkukunan, maari na ito ay nagpapahiwatig nang maling endpoint o sinusubukang mag rekord tulad ng isang report na hindi namamalagi.
+* **409 Conflict** - tunay ang pinagkukunan subalit kapag pinayagan ang hiling, magkakaroon ng hindi pagkakasundo na mabubuo sa sistema, tulad ng pag-file ng ulat sa card kung saan ang ulat ay namamalagi.
+* **415 Unsupported Media Type** - ang file na ini-upload ay hindi sinusuporta ng sistema - kadalasan ibig sabihin nito na may binary file tulad ng isang imahe ay ini-iupload subalit ang Content-Type header kasama ang nauugnay na MIME type \(e.g. ‘image/jpeg’\) ay hindi pa nabibigay.
+* **429 Too Many Requests** - sumobra na ang quota ng mga hilig bawat segundo o bawat araw.
 
 ## 5xx Errors
 
 Errors starting with a 5 generally indicate a server side fault and should be immediately:
 
-* **500 Internal Server Error** - a catch-all error indicating that something has failed server side
-* **503 Service Unavailable** - the service is down and cannot respond to requests
+Madalas ang mga pagkakamaling nagsisimula sa 5 ay nagpapahiwatig ng depekto sa server at dapat ma resolba agad-agad:
+
+* **500 Internal Server Error** - isang pangkalahatang pagkakamali sa panig ng server. 
+* **503 Service Unavailable** - bagsak ang serbisyo at hindi maka-responde sa mga hiling. 
 

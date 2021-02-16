@@ -1,12 +1,12 @@
 # API
 
-The Petabencana Data API provides a number of endpoints for interacting with the system. These are summarised below, full details of the endpoints together with worked examples can be found in the pages that follow.
+Nagbibigay ang MapaKalamidad Data API ng iilang endpots upang makipag-ugnayan sa system. Ang mga ito ay buod sa ibaba, ang buong detayle ng mga endpoints kasama ang mga nagawang halimbawa ay matatagpuan sa mga sumusunod na pahina:
 
-## Summary of Endpoints
+## Buod ng mga Endpoints
 
-Details of each endpoint are as follows.
+Ang mga detalye ng bawat endpoint ay ang mga sumusunod:
 
-| Endpoint | Description | Methods | Protected |
+| Paglalarawan | Pamamaraan | Protected |  |
 | :--- | :--- | :--- | :--- |
 | /cards | GRASP Cards | GET,PUT | Yes |
 | /cities | Cities | GET | No |
@@ -20,4 +20,6 @@ Details of each endpoint are as follows.
 | /reports/archive | Reports Archive | GET | No |
 | /reports/timeseries | Reports Time Series | GET | No |
 | /stats/\* | Summary Statistics | GET | No |
+
+
 

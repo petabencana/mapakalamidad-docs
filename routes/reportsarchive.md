@@ -1,31 +1,31 @@
-# Reports/Archive
+# Ulat/Archive
 
-Archive of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
+Archive ng mga ulat sa baha \(tingnan ang Mga dokumentasyon ng  [Reports endpoint](reports.md)\), na ipinakita bilang isang JSON kasama ang lahat ng mga ulat sa pagbaha na natanggap sa loob ng tinukoy na tagal ng panahon.
 
-Currently this data is only avaialble for Jakarta.
+Sa kasalukuyan ang mga datos na ito ay magagamit lamang para sa Quezon City at Pamapanga.
 
-## Request Format
+## Format ng Kahilingan
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| start | Oras ng pagsisimula para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| end | Pagtatapos ng oras para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Tandaan na ang time zone ay dapat na tinukoy bilang +/- Ang offset ng UTC na mangangailangan ng pag-encode ng character na HTML \(hal. +0700 nagiging% 2B0700\).
 
-## Get /reports/archive
+## Kumuha/reports/archive
 
-## GET /reports
+## KUMUHA /reports
 
-List flood reports in Jabodetabek received within specified time window
+Ilista ang mga ulat sa pagbaha sa Quezon City at Pampanga na natanggap sa loob ng tinukoy na window ng oras:
 
 ```text
 curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {

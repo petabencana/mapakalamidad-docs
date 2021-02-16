@@ -1,34 +1,34 @@
-# Floods
+# Baha
 
-Live flood information - by city, by flood state \(if required\). Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum\_state or all areas together with their current flood status. In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol).
+Impormasyon ng live na pagbaha - ayon sa lungsod, ng estado ng baha \(kung kinakailangan\). SInusuportahan ang /estado endpoint kung saan ay hindi pang-heograpia at simpleng nagbibigay sa estado ng mga lugar na binabaha pati na rin ang isang pangheograpiyang endpoint na magbibigay sa mga lugar na binabaha na napapailalim sa isang minimum\_state o kung saan lahat ng mga lugar kasama ang kanilang kasalukuyang katayuan sa pagbaha. Bilang karagdagan sa [topojson ](https://github.com/topojson/topojson/wiki)at [geojson ](https://geojson.org/)sinusuportahan ng endpoint na ito ang[ Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol).
 
-Note that flood states in CAP format have a default expiry time of 6 hours from the time that the API request is made.
+Tandaan na ang mga estadong baha na nasa CAP format ay mayroong default na pag-expire sa loob ng 6 na oras simula sa kahilingan ng API. 
 
-## Flood State Codes
+## State Codes ng Baha
 
 Numeric codes are used to represent flood states, these are as follows:
 
 | Code | Severity | Description |
 | :--- | :--- | :--- |
-| 1 | Unknown | AN UNKNOWN LEVEL OF FLOODING - USE CAUTION - |
-| 2 | Minor | FLOODING OF BETWEEN 10 and 70 CENTIMETERS |
-| 3 | Moderate | FLOODING OF BETWEEN 71 and 150 CENTIMETERS |
-| 4 | Severe | FLOODING OF OVER 150 CENTIMETERS |
+| 1 | Hindi Alam | HINDI ALAM ANG ANTAS NG BAHA -  MAG INGAT - |
+| 2 | Minor | BAHA SA PAGITAN NG 10 AT 70 SENTIMETRO |
+| 3 | Katamtaman | BAHA SA PAGITAN NG 71 AT 150 SENTIMETRO |
+| 4 | Marahas | BAHA MAHIGIT 150 SENTIMETRO |
 
-## Request Format
+## Format ng Paghiling
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, `xml`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
-| minimum\_state | The minimum flood state that should be returned? \(min: `1`, max: `4`\) | Number | No |
+| city | Aling lungsod ang nais naming ibalik ang mga imprastraktura? \(isa sa`bdg`, `jbd`, `sby`\) | String | No |
+| format | Aling format ang dapat nating ibalik ang mga resulta? \(isa sa`json`, `xml`, defaults to `json`\) | String | No |
+| geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
+| minimum\_state | Ang minimum na estado ng baha na dapat ibalilk? \(min: `1`, max: `4`\) | Number | No |
 
-## GET /floods
+## KUMUHA /floods
 
 {% tabs %}
 {% tab title="https" %}
-List all flooded areas in Jakarta with a flood state of 1 or higher.
+Ilista ang lahat ng mga lugar na binabaha sa Quezon City na may estado ng baha \(flood state\) ng 1 o mas mataas.
 
 ```text
 curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1"
@@ -44,7 +44,7 @@ curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1&format=xml&geo
 {% endtab %}
 {% endtabs %}
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {
@@ -291,7 +291,7 @@ Results are as follows:
 }
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```markup
 <?xml version="1.0"?>
@@ -336,15 +336,15 @@ Results are as follows:
 </feed>
 ```
 
-## GET /floods/states
+## KUMUHA /floods/states
 
-List all flooded area states in Jakarta with a flood state of 1 or higher.
+Ilista ang lahat ng mga estadong binahang  ng nabahaang lugar sa Quezon City na may flood state.
 
 ```text
 curl "https://data.petabencana.id/floods/states?city=jbd&minimum_state=1"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {
@@ -359,9 +359,9 @@ Results are as follows:
 }
 ```
 
-## PUT /floods/:localAreaId
+## ILAGAY /floods/:localAreaId
 
-PUT a new flood state in the system for a given local area \(secure, requires authorisation token\).
+ILAGAY ang bagong flood state sa system para sa isang naituring lokal na lugar. \( PUT a new flood state in the system for a given local area \(ligtas, nangangailangan ng token ng pahintulot\). 
 
 ```text
 curl -X PUT -H "Content-Type: application/json" -d '{
@@ -369,7 +369,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 }' "https://data.petabencana.id/floods/5"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {
@@ -379,15 +379,15 @@ Results are as follows:
 }
 ```
 
-## DELETE /floods/:localAreaId
+## TANGGALIN /floods/:localAreaId
 
-Clears the flood state entirely for a given local area \(secure, requires authorisation token\).
+Inaalis ang kabuuang flood state para sa isang piling lokal na lugar. \(ligtas, nangangailangan ng token ng pahintulot\)
 
 ```text
 curl -X DELETE "https://data.petabencana.id/floods/5"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusunod:
 
 ```javascript
 {

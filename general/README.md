@@ -1,4 +1,4 @@
-# General
+# Pangkalahatan
 
-There are a number of general standards which apply regardless of the API being called and these are documented in the pages that follow.
+May iilang pamantayan na nalalapat anuman ang API na ginagamit at ang mga ito ay dokumentado sa mga sumusunod na pahina.
 

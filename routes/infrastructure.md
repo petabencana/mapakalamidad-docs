@@ -1,28 +1,28 @@
-# Infrastructure
+# Imprastraktura
 
-Locations of local infrastructure including flood gates, pumps and waterways.
+Ang mga lokasyon ng lokal na imprastraktura kabilang ang mga flood gates, bomba at daanan ng tubig.
 
-## Request Format
+## Format ng Kahilingan
 
-| URL Parameter | Description | Format | Required |
+| URL Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| type | What type of infrastructure do we wish to list?  \(one of `floodgates`, `pumps`, `waterways`\) | String | Yes |
+| type | Anong uri ng imprastraktura ang nais naming ilista?  \(isa sa`floodgates`, `pumps`, `waterways`\) | String | Yes |
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| format | Aling format ang dapat nating ibalik? \(isa sa `json`, defaults to `json`\) | String | No |
+| geoformat | Anong format ang dapat gamitin ng geographic results o ang resulta sa heyograpiya \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
-## GET /infrastructure/:type
+## KUMUHA /infrastructure/:type
 
-Return a list of pumps in Jakarta.
+Ibalik ang isang listahan ng mga bomba sa Quezon CIty at Pampanga. 
 
 ```text
 curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusnod:
 
 ```javascript
 {

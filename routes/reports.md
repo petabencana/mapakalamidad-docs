@@ -1,25 +1,25 @@
-# Reports
+# Ulat
 
-Live disaster reports, by default reports will be returned for the last hour.
+Ang mga ulat tungkol sa live na kalamidad, sa pamamagitan ng default na mga ulat ay ibabalik sa huling oras.
 
-## Request Format
+## Format ng Kahilingan
 
-| Query Parameter | Description | Format | Required |
+| Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
-| timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
+| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| format | Aling format ang dapat nating ibalik ang mga resulta? \(isa sa `json`, defaults to `json`\) | String | No |
+| geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| timeperiod | Anong tagal ng panahon \(sa mga segundo\) upang ilista ang mga ulat para sa, mahigpit na karapat-dapat sa pagitan ng 1 at 604800 \(1 linggo\) | Number | No |
 
-## GET /reports
+## KUMUHA /reports
 
-List all current flood reports for Jakarta.
+Ilista ang lahat ng kasalukuyang ulat sa baha para sa Quezon City at Pampanga.
 
 ```text
 curl "https://data.petabencana.id/reports?city=jbd"
 ```
 
-Results are as follows:
+Ang mga resulta ay ang mga sumusnod:
 
 ```javascript
 {

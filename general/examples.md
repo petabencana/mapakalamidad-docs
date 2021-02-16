@@ -1,6 +1,6 @@
-# Examples
+# Mga Halimbawa
 
-The APIs all feature worked examples with sample HTTPS calls. As we need to pass authentication headers in some cases to be able to connect we cannot run these in a web browser. Each example shows a [cURL](https://curl.haxx.se/docs/manpage.html) command which is available on Windows, Mac or Linux. Note that for protected routes you will need to insert your own JWT token for these to work.
+Ang APIs all feature ay gumagana sa mga halimbawa na may sample HTTPS calls. Dahil kinakailangan pumasa sa mga headers ng pagpapatunay, sa iilang mga kaso upang maka-konek, hindi maaring mapatakbo ang mga ito sa isang web browser.  Ang bawat halimbawa ay nagpapakita ng isang utos na cURL command na mgagamit sa WIndows, Mac o Linux. Tandaan na para sa mga protektadong ruta kakailanganin mong ipasok ang iyong sariling token ng JWT para gumana ang mga ito.
 
-If you are not comfortable with the command line or generally prefer a user interface then [Postman](https://www.getpostman.com/) is a fantastic free tool for experimenting with APIs.
+Kung hindi ka komportable sa command line o mas gusto lang ang isang user interface, ang [Postman ](https://www.postman.com/)ay isang kamangha-manghang libreng tool para sa pag-eksperimento sa mga API.
 
