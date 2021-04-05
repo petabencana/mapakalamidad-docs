@@ -15,7 +15,7 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 List all current flood gauge reports for Quezon City and Pampanga Province.
 
 ```text
-curl "https://data.mapakalamidad.ph/floodgauges?city=jbd"
+curl "https://data.mapakalamidad.ph/floodgauges?city=PH-QC"
 ```
 
 Results are as follows:
