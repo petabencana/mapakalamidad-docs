@@ -338,10 +338,10 @@ Results are as follows:
 
 ## GET /floods/states
 
-List all flooded area states in Jakarta with a flood state of 1 or higher.
+List all flooded area states in Quezon City with a flood state of 1 or higher.
 
 ```text
-curl "https://data.petabencana.id/floods/states?city=jbd&minimum_state=1"
+curl "https://data.mapakalamidad.ph/floods/states?city=PH-QC&minimum_state=1"
 ```
 
 Results are as follows:
