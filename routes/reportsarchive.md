@@ -10,7 +10,7 @@ Currently this data is only avaialble for Quezon City and Pampanga Province.
 | :--- | :--- | :--- | :--- |
 | start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| city | Which city do we wish to return infrastructure for? \(one of `PH-QC`, `PH-PG)` | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
@@ -22,7 +22,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 List flood reports in Jabodetabek received within specified time window
 
 ```text
-curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
+curl "https://data.mapakalamidad.ph/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
 Results are as follows:

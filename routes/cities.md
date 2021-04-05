@@ -14,7 +14,7 @@ MapaKalamidad supports multiple cities defined by a geographic area. This endpoi
 Return all cities in default \(topojson\) format.
 
 ```text
-curl "https://data.petabencana.id/cities"
+curl "https://data.mapakalamidad.ph/cities"
 ```
 
 Results are as follows:
@@ -158,7 +158,7 @@ Results are as follows:
 Return all cities in default \(geojson\) format.
 
 ```text
-curl "https://data.petabencana.id/cities?geoformat=geojson"
+curl "https://data.mapakalamidad.ph/cities?geoformat=geojson"
 ```
 
 Results are as follows:
