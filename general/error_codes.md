@@ -1,6 +1,6 @@
 # Error Codes
 
-MapaKalamidad uses the standard [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to communicate errors together with a json formatted error message giving more information as to the root cause of the error. The main codes used are as follows:
+Petabencana uses the standard [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to communicate errors together with a json formatted error message giving more information as to the root cause of the error. The main codes used are as follows:
 
 ## 4xx Errors
 

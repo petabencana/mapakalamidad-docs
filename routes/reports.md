@@ -6,17 +6,17 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| city | Which city do we wish to return infrastructure for? \(one of `PH-QC, PH-PG`\) | String | No |
 | format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 | timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
 
 ## GET /reports
 
-List all current flood reports for Quezon City and Pampanga Province.
+List all current flood reports for Quezon City and/or Pampanga Province.
 
 ```text
-curl "https://data.petabencana.id/reports?city=jbd"
+curl "https://data.mapakalamidad.ph/reports?city=PH-QC"
 ```
 
 Results are as follows:

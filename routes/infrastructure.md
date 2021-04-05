@@ -16,7 +16,7 @@ Locations of local infrastructure including flood gates, pumps and waterways.
 
 ## GET /infrastructure/:type
 
-Return a list of pumps in Quezon City and Pampanga Province.
+Return a list of pumps in Jakarta.
 
 ```text
 curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"

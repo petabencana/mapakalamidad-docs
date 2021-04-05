@@ -1,6 +1,6 @@
 # Cards
 
-MapaKalamidad report cards for disaster events. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to make updates to cards.
+Petabencana report cards for disaster events. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to make updates to cards.
 
 ## Request Format
 
@@ -46,7 +46,7 @@ Retrieve details of a card:
 Here is a simple call to GET a card:
 
 ```text
-curl -X GET -H "X-Api-Key: API_KEY_GOES_HERE" "https://data.mapakalamidad.ph/cards/abcdefg"
+curl -X GET -H "X-Api-Key: API_KEY_GOES_HERE" "https://data.petabencana.id/cards/abcdefg"
 ```
 
 The card was found:

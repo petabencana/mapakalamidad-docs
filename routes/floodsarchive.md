@@ -2,7 +2,7 @@
 
 Archive of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the maximum flood state recorded for all flood affected areas within the specified time period. Maximum state is recorded alongside area id. Use the Floods endpoint to get geospatial boundaries of individual areas.
 
-Currently this data is only available for Quezon City, and Pampanga Province.
+Currently this data is only available for Jakarta.
 
 ## Request Format
 
@@ -17,10 +17,10 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ## GET /floods
 
-List all flooded areas in Quezon City and Pampanga Province with a flood state of 1 or higher.
+List all flooded areas in Jakarta with a flood state of 1 or higher.
 
 ```text
-curl "https://data.mapakalamidad.ph/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700"
+curl "https://data.petabencana.id/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700"
 ```
 
 Results are as follows:
