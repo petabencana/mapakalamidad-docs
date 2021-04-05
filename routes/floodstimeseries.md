@@ -2,7 +2,7 @@
 
 Time series of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
-Currently this data is only available for Jakarta.
+Currently this data is only available for Quezon City and Pampanga Province.
 
 ## Request Format
 
@@ -17,7 +17,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ## GET /floods
 
-List all flooded areas in Jakarta with a flood state of 1 or higher.
+List all flooded areas in Quezon City and Pampanga Province with a flood state of 1 or higher.
 
 ```text
 curl "https://data.petabencana.id/floods/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500"

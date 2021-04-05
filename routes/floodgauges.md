@@ -12,7 +12,7 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 
 ## GET /floodgauges
 
-List all current flood gauge reports for Jakarta.
+List all current flood gauge reports for Quezon City and Pampanga Province.
 
 ```text
 curl "https://data.petabencana.id/floodgauges?city=jbd"

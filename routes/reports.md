@@ -13,7 +13,7 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 ## GET /reports
 
-List all current flood reports for Jakarta.
+List all current flood reports for Quezon City and Pampanga Province.
 
 ```text
 curl "https://data.petabencana.id/reports?city=jbd"

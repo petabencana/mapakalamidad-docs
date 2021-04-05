@@ -1,6 +1,6 @@
 # Feeds
 
-Petabencana utilises data feeds from a number of third party sources. This endpoint allows the creation of data into the system for authorised users. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to post data through the /feeds endpoint.
+MapaKalamidad utilises data feeds from a number of third party sources. This endpoint allows the creation of data into the system for authorised users. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to post data through the /feeds endpoint.
 
 ## POST /feeds/qlue
 

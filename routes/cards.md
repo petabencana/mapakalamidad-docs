@@ -1,6 +1,6 @@
 # Cards
 
-Petabencana report cards for disaster events. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to make updates to cards.
+MapaKalamidad report cards for disaster events. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to make updates to cards.
 
 ## Request Format
 
