@@ -366,7 +366,7 @@ PUT a new flood state in the system for a given local area \(secure, requires au
 ```text
 curl -X PUT -H "Content-Type: application/json" -d '{
     "state": 2
-}' "https://data.petabencana.id/floods/5"
+}' "https://data.mapakalamidad.ph/floods/5"
 ```
 
 Results are as follows:
@@ -384,7 +384,7 @@ Results are as follows:
 Clears the flood state entirely for a given local area \(secure, requires authorisation token\).
 
 ```text
-curl -X DELETE "https://data.petabencana.id/floods/5"
+curl -X DELETE "https://data.mapakalamidad.ph/floods/5"
 ```
 
 Results are as follows:
