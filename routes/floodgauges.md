@@ -4,17 +4,16 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 
 ## Request Format
 
-| Query Parameter | Description | Format | Required |
-| :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `PH-QC, PH-PG`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| Query Parameter | Description                                                                                     | Format | Required |
+| --------------- | ----------------------------------------------------------------------------------------------- | ------ | -------- |
+| format          | Which format should we return results in? (one of `json`, defaults to `json`)                   | String | No       |
+| geoformat       | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No       |
 
 ## GET /floodgauges
 
 List all current flood gauge reports for Quezon City and Pampanga Province.
 
-```text
+```
 curl "https://data.mapakalamidad.ph/floodgauges?city=PH-QC"
 ```
 
@@ -272,4 +271,3 @@ Results are as follows:
   }
 }
 ```
-
