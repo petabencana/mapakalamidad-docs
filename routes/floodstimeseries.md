@@ -17,10 +17,10 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ## GET /floods
 
-List all flooded areas in Quezon City and Pampanga Province with a flood state of 1 or higher.
+List all flooded areas in the Philippines with a flood state of 1 or higher.
 
 ```
-curl "https://data.petabencana.id/floods/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500"
+curl "https://data.makapakalamidad.ph/floods/timeseries?start=2021-11-20T11%3A00%3A00-0500&end=2021-11-20T15%3A00%3A00-0500"
 ```
 
 Results are as follows:
