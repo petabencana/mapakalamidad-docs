@@ -11,6 +11,7 @@
   * [Error Codes](general/error\_codes.md)
   * [Content Types](general/encoding.md)
   * [Examples](general/examples.md)
+  * [Supported Area](general/supported-area.md)
 * [API](routes/README.md)
   * [Cards](routes/cards.md)
   * [Cities](routes/cities.md)
