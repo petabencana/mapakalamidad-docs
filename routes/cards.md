@@ -34,15 +34,6 @@ For example a card with flood data including flood\_depth:
   }
 ```
 
-Or, a card with pre-flood data report regarding a drain.
-
-```javascript
-  "disaster_type": "prep",
-  "card_data":{
-    "report_type":"drain"
-  }
-```
-
 ## GET /cards/:cardId
 
 Retrieve details of a card:
