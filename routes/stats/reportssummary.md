@@ -1,18 +1,18 @@
 # Stats - Reports Summary
 
-Count of reports by source \("qlue" for Qlue, "detik" for Detik Pasangmata, or "grasp" being combined Twitter and Telegram\), by default reports will be returned for the last hour.
+Count of reports by source ( "grasp" being combined Twitter, Facebook , Telegram and Website), by default reports will be returned for the last 3 hours.
 
 ## Request Format
 
-| Query Parameter | Description | Format | Required |
-| :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
+| Query Parameter | Description                                                                                                     | Format | Required |
+| --------------- | --------------------------------------------------------------------------------------------------------------- | ------ | -------- |
+| admin           | Which city do we wish to return infrastructure for? (one of [supported areas](../../general/supported-area.md)) | String | No       |
+| timeperiod      | What time period (in seconds) to list reports for, must be strictly between 1 and 604800 (1 week)               | Number | No       |
 
-## GET /stats/getReportsSummary.md
+## GET /stats/getReportsSummary
 
-```text
-curl "https://data.petabencana.id/stats/reportsSummary?city=jbd"
+```
+curl "https://data.mapakalmidad.ph/stats/reportsSummary?admin=PH-01"
 ```
 
 Results are as follows:
@@ -31,18 +31,18 @@ Results are as follows:
             "properties": {
               "pkey": "5519",
               "created_at": "2016-12-09T21:37:00.000Z",
-              "source": "qlue",
+              "source": "grasp",
               "status": "confirmed",
               "url": null,
               "image_url": "https://lh3.googleusercontent.com/ByClSrW6QhFkBxUhZo0rFt6eiVdvnEHisSzsgjaC9KxdGAQ6CYksTZRA1rcNP9cBGZiv6s4Vp5D8NzkAjPyrBs6c6R4h=s480-c",
               "disaster_type": "flood",
               "report_data": null,
               "tags": {
-                "instance_region_code": "jbd",
+                "instance_region_code": "PH-01",
                 "local_area_id": "350"
               },
               "title": " ",
-              "text": "Perlu penataan dan dirapihkan @ahokbtp semoga bisa lbh baik, bersih dan teratur"
+              "text": "Flood report"
             },
             "coordinates": [
               0,
@@ -72,4 +72,3 @@ Results are as follows:
   }
 }
 ```
-

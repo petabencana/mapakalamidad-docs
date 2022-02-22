@@ -4,12 +4,12 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 ## Request Format
 
-| Query Parameter | Description                                                                                       | Format | Required |
-| --------------- | ------------------------------------------------------------------------------------------------- | ------ | -------- |
-| admin           | Which city do we wish to return infrastructure for? (see supported areas)                         | String | No       |
-| format          | Which format should we return results in? (one of `json`, defaults to `json`)                     | String | No       |
-| geoformat       | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`)   | String | No       |
-| timeperiod      | What time period (in seconds) to list reports for, must be strictly between 1 and 604800 (1 week) | Number | No       |
+| Query Parameter | Description                                                                                               | Format | Required |
+| --------------- | --------------------------------------------------------------------------------------------------------- | ------ | -------- |
+| admin           | Which city do we wish to return infrastructure for? (see [supported areas](../general/supported-area.md)) | String | No       |
+| format          | Which format should we return results in? (one of `json`, defaults to `json`)                             | String | No       |
+| geoformat       | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`)           | String | No       |
+| timeperiod      | What time period (in seconds) to list reports for, must be strictly between 1 and 604800 (1 week)         | Number | No       |
 
 ## GET /reports
 

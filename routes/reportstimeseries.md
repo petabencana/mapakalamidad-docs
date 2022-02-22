@@ -1,15 +1,15 @@
-# Reports/Timeseries
+# Crowdsourced Reports/Timeseries
 
-Time series of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Time series of flood reports (see [Reports endpoint](reports.md) documentation), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
 ## Request Format
 
-| Query Parameter | Description | Format | Required |
-| :--- | :--- | :--- | :--- |
-| start | Start time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| Query Parameter | Description                      | Format                                              | Required |
+| --------------- | -------------------------------- | --------------------------------------------------- | -------- |
+| start           | Start time for timeseries period | String in ISO 8601 format (YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes      |
+| end             | End time for timeseries period   | String in ISO 8601 format (YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes      |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Note that time zone must be specified as +/- UTC offset which will require HTML character encoding (e.g. +0700 becomes %2B0700).
 
 ## Get /reports/timeseries
 
@@ -17,8 +17,8 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 Get count of flood reports within specified time period.
 
-```text
-    curl "https://data.mapakalamidad.ph/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
+```
+    curl "https://data.mapakalamidad.ph/reports/timeseries?start=2021-11-26T12%3A00%3A00%2B0700&end=2021-11-26T15%3A00%3A00%2B0700"
 ```
 
 Results are as follows:
@@ -46,4 +46,3 @@ Results are as follows:
         ]
     }
 ```
-
