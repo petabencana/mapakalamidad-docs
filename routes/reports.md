@@ -19,6 +19,12 @@ List all current flood reports from Philippines.
 curl "https://data.mapakalamidad.ph/reports?"
 ```
 
+List all current flood reports from Philippines in geojson format.
+
+```
+curl "https://data.mapakalamidad.ph/reports?geoformat=geojson"
+```
+
 Results are as follows:
 
 ```javascript
