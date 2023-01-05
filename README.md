@@ -1,6 +1,6 @@
 # Pagpapakilala
 
-Ang MapaKalamidad ay pinapatakbo ng [Yayasan Peta Bencana](https://info.petabencana.id/), sa tulong ng U.S. Agency for International Development's (USAID) Cognicity Open Source Software for Next Generation Disaster Risk Management Program bilang isang libre at transparent na plataporma para sa agarang tugon at pamamahala ng kalamidad.
+Ang MapaKalamidad ay pinapatakbo ng [Yayasan Peta Bencana](https://info.petabencana.id/), sa tulong ng U.S. Agency for International Development (USAID) sa ilalim ng Cognicity Open Source Software for Next Generation Disaster Risk Management Program bilang isang libre at transparent na plataporma para sa agarang tugon at pamamahala ng kalamidad.
 
 Ang plataporma ay isinasatupad ang kasabihang "people are the best sensors" kung saan ang pinagtibay na ulat ay kinokolekta direkta mula sa mga gumagamit sa daan upang iwasan ang mga hindi mabisang pamamaraan ng pagkolekta at pag proseso ng datos. Ang framework na ito ay lumilikha ng tumpak at real-time na datos na ginawa para sa mga gumagamit, lalo na sa mga first responders.
 
