@@ -10,19 +10,19 @@ Sa kasalukuyan ang mga datos na ito ay magagamit lamang para sa Quezon City at P
 | :--- | :--- | :--- | :--- |
 | start | Oras ng pagsisimula para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | Pagtatapos ng oras para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
 | geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Tandaan na ang time zone ay dapat na tinukoy bilang +/- Ang offset ng UTC na mangangailangan ng pag-encode ng character na HTML \(hal. +0700 nagiging% 2B0700\).
 
 ## Kumuha/reports/archive
 
-## KUMUHA /reports
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
 Ilista ang mga ulat sa pagbaha sa Quezon City at Pampanga na natanggap sa loob ng tinukoy na window ng oras:
 
 ```text
-curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
+curl --user-agent "YOUR-UA-STRING" "https://api.mapakalamidad.ph/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
 Ang mga resulta ay ang mga sumusunod:
