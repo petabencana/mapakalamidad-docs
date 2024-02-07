@@ -6,7 +6,7 @@ Ang mga ulat tungkol sa live na kalamidad, sa pamamagitan ng default na mga ulat
 
 | Query Parameter | Paglalarawan | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `Ph-00`, `PH-01`, `PH-02`\) | String | No |
 | format | Aling format ang dapat nating ibalik ang mga resulta? \(isa sa `json`, defaults to `json`\) | String | No |
 | geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 | timeperiod | Anong tagal ng panahon \(sa mga segundo\) upang ilista ang mga ulat para sa, mahigpit na karapat-dapat sa pagitan ng 1 at 604800 \(1 linggo\) | Number | No |
