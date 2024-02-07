@@ -10,7 +10,7 @@ Sa kasalukuyan ang mga datos na ito ay magagamit lamang para sa Quezon City at P
 | :--- | :--- | :--- | :--- |
 | start | Oras ng pagsisimula para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | Pagtatapos ng oras para sa panahon ng archive | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| admin | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Aling lungsod ang nais nating ibalik ang mga imprastraktura? \(isa sa [supported areas](../general/supported-area.md) ) | String | No |
 | geoformat | Anong format ang dapat gamitin ang mga resulta sa heyograpiya? \(isa sa `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Tandaan na ang time zone ay dapat na tinukoy bilang +/- Ang offset ng UTC na mangangailangan ng pag-encode ng character na HTML \(hal. +0700 nagiging% 2B0700\).
