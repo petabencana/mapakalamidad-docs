@@ -15,12 +15,12 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ## Get /reports/archive
 
-## GET /reports
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
-List flood reports in Quezon City received within specified time window
+List flood reports received within specified time window
 
 ```
-curl "https://data.mapakalamidad.ph/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
+curl --user-agent "YOUR-UA-STRING" "https://api.mapakalamidad.ph/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
 Results are as follows:
