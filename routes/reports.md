@@ -13,16 +13,18 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 ## GET /reports
 
-List all current flood reports from Philippines.
+List all current reports from Philippines.
+
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
 ```
-curl "https://data.mapakalamidad.ph/reports?"
+curl --user-agent "YOUR-UA-STRING" "https://api.mapakalamidad.ph/reports"
 ```
 
 List all current flood reports from Philippines in geojson format.
 
 ```
-curl "https://data.mapakalamidad.ph/reports?geoformat=geojson"
+curl --user-agent "YOUR-UA-STRING" "https://api.mapakalamidad.ph/reports?geoformat=geojson"
 ```
 
 Results are as follows:
