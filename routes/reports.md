@@ -15,8 +15,10 @@ Ang mga ulat tungkol sa live na kalamidad, sa pamamagitan ng default na mga ulat
 
 Ilista ang lahat ng kasalukuyang ulat sa baha para sa Quezon City at Pampanga.
 
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
+
 ```text
-curl "https://data.petabencana.id/reports?city=jbd"
+curl --user-agent "YOUR-UA-STRING" "https://api.mapakalamidad.ph/reports?admin=PH-00"
 ```
 
 Ang mga resulta ay ang mga sumusnod:
