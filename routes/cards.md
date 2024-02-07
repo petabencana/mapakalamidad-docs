@@ -20,9 +20,111 @@ MapaKalamidad report cards for disaster events. Note: [authentication](https://d
 
 Card data requires the object `report_type` to exist. Where `disaster_type` is set to 'flood' then the object `flood_depth` should also exist adjacent to `report_type`. Where the `disaster_type` is 'prep' then `report_type` should be one of the types as specified in server config.js.
 
-| Disaster Type | report\_type | Attribute details                                                                                                                                          |
-| ------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Flood         | flood        | <p><strong>flood_depth:</strong> flood severity based on depth in cm<br></p><p>&#x3C; 70 cm : Minor</p><p>70 - 150 cm : Moderate</p><p>150 cm : Severe</p> |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Disaster Type</th>
+      <th style="text-align:left">report_type</th>
+      <th style="text-align:left">Attribute details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Flood</td>
+      <td style="text-align:left">flood</td>
+      <td style="text-align:left">
+        <p><b>flood_depth: </b>flood severity based on depth in cm
+          <br />
+        </p>
+        <p>&lt; 70 cm : Minor</p>
+        <p>70 - 150 cm : Moderate</p>
+        <p>150 cm : Severe</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Earthquake</td>
+      <td style="text-align:left">road</td>
+      <td style="text-align:left"><b>accessabilityFailure: </b>the level of road damage affected by earthquake
+        <br
+        />
+        <br />0 : &lt; 0,5 m (No Vehicle Access)
+        <br />1 : 0,6 - 1 m (2 and 3-Wheel Vehicle)
+        <br />2 or 3 : 1.1 - 1.8 m (4-Wheel Vehicle)
+        <br />4 : &gt;1,9 m Large Vehicles (Large SUVs and Trucks)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Earthquake</td>
+      <td style="text-align:left">structure</td>
+      <td style="text-align:left">
+        <p><b>structureFailure: </b>the level of structure damage affected by earthquake</p>
+        <p></p>
+        <p>0 : Observed Shaking
+          <br />1 : Minor Damage
+          <br />2 : Major Damage
+          <br />3 : Fully Collapsed</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Volcano</td>
+      <td style="text-align:left">volcanic</td>
+      <td style="text-align:left">
+        <p><b>volcanicSigns</b>: Volcano Observations</p>
+        <p></p>
+        <p>0 : Water Sources are drying up/Contaminated
+          <br />1 : Declining plant health
+          <br />2 : Unusual Animal Behaviour
+          <br />3 : Frequent Earthquake Tremors
+          <br />4 : Frequent Rumbling Sounds</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Volcano</td>
+      <td style="text-align:left">ashfall</td>
+      <td style="text-align:left">
+        <p><b>smogImpact</b>: the level of ashfall situation</p>
+        <p></p>
+        <p>0 : Fine/Dry
+          <br />1 : Granulated
+          <br />2 : Dense/Wet
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Typhoon</td>
+      <td style="text-align:left">wind</td>
+      <td style="text-align:left">
+        <p><b>impact</b>: level of disruption caused by extreme wind</p>
+        <p></p>
+        <p>0 : Low Disruption
+          <br />1 : Medium Disruption
+          <br />2 : High Disruption</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Typhoon</td>
+      <td style="text-align:left">flood</td>
+      <td style="text-align:left">
+        <p><b>flood_depth: </b>flood severity based on depth in cm
+          <br />
+        </p>
+        <p>&lt; 70 cm : Minor</p>
+        <p>70 - 150 cm : Moderate</p>
+        <p>150 cm : Severe</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Typhoon</td>
+      <td style="text-align:left">storm</td>
+      <td style="text-align:left">
+        <p><b>impact: </b>Disruption Levels
+          <br />
+        </p>
+        <p>Low</p>
+        <p>Medium</p>
+        <p>High</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 For example a card with flood data including flood\_depth:
 
@@ -91,7 +193,7 @@ curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
         "lat": -6.149531,
         "lng": 106.869342
     }
-}' "https://data.petabencana.id/cards/abcdefg"
+}' "https://data.mapakalamidad.ph/cards/abcdefg"
 ```
 
 Card was successfully created:
