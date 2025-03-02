@@ -1,10 +1,10 @@
 # Introduction
 
-MapaKalamidad.ph is a project initiated by Yayasan Peta Bencana with support from the U.S. Agency for International Development (USAID) as part of the Cognicity Open Source Software for Next Generation Disaster Risk Management Program as a free, transparent platform for emergency response and disaster management.
+MapaKalamidad.ph is a project initiated by Yayasan Peta Bencana as a free, transparent platform for emergency response and disaster management.
 
 The platform adopts a “people as sensors” paradigm, where confirmed reports are collected directly from the users at street level in a manner that removes expensive and time-consuming data processing. This framework creates accurate, real-time data which is immediately made available for users and first responders.\
 \
-MapaKalamidad.ph gathers, sorts, and visualizes data using specially developed CogniCity Open Source Software - an enterprise-level platform for emergency response and disaster management - to transforms the noise of social and digital media into critical information for residents, communities, and government agencies
+MapaKalamidad.ph gathers, sorts, and visualizes data using specially developed Situational Intelligence Open Source Software (Siti OSS) - an enterprise-level platform for emergency response and disaster management - to transforms the noise of social and digital media into critical information for residents, communities, and government agencies
 
 ## MapaKalamidad Data API
 
